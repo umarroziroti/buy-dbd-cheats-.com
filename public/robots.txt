@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Disallow: /go/
+Disallow: /products/dbd-cheats/lite/
+Disallow: /products/dbd-cheats/pro/
+Disallow: /products/dbd-cheats/unlock-all/
+
+Sitemap: https://www.buydbdcheats.com/sitemap.xml
+Sitemap: https://www.buydbdcheats.com/sitemap-pages.xml
+Sitemap: https://www.buydbdcheats.com/sitemap-products.xml
+Sitemap: https://www.buydbdcheats.com/sitemap-blog.xml
+Sitemap: https://www.buydbdcheats.com/sitemap-forum.xml
+
+# RSS: https://www.buydbdcheats.com/rss.xml

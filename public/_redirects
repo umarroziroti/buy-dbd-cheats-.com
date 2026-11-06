@@ -1,0 +1,37 @@
+# Checkout (same-tab 302 → partner affiliate hop)
+/go/dbd  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fdbd  302
+/go/dbd/  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fdbd  302
+/go/hwid-spoofer  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fhwid-spoofer  302
+/go/hwid-spoofer/  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fhwid-spoofer  302
+/go/ugc  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fugc  302
+/go/ugc/  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fugc  302
+/go/skin-changer  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fskin-changer  302
+/go/skin-changer/  https://zadeyo.com/go/UMAR?to=%2Fproducts%2Fskin-changer  302
+
+# Legacy paths from template / old brands
+/contact  /support/  301
+/contact/  /support/  301
+/cheats  /products/dbd-cheats/  301
+/cheats/  /products/dbd-cheats/  301
+/cheats/lite  /products/dbd-cheats/  301
+/cheats/lite/  /products/dbd-cheats/  301
+/cheats/pro  /products/dbd-cheats/  301
+/cheats/pro/  /products/dbd-cheats/  301
+/cheats/elite  /products/dbd-cheats/elite/  301
+/cheats/elite/  /products/dbd-cheats/elite/  301
+/cheats/compare  /blog/dbd-cheat-feature-comparison/  301
+/cheats/compare/  /blog/dbd-cheat-feature-comparison/  301
+/products/payday-3-cheats  /products/dbd-cheats/  301
+/products/payday-3-cheats/  /products/dbd-cheats/  301
+/products/payday-3-cheats/*  /products/dbd-cheats/:splat  301
+/products/dota-2-cheats  /products/dbd-cheats/  301
+/products/dota-2-cheats/  /products/dbd-cheats/  301
+/products/eft-cheats  /products/dbd-cheats/  301
+/products/eft-cheats/  /products/dbd-cheats/  301
+/products/eft-cheats/*  /products/dbd-cheats/:splat  301
+/go/eft  /go/dbd/  301
+/go/eft/  /go/dbd/  301
+/go/payday-3  /go/dbd/  301
+/go/payday-3/  /go/dbd/  301
+/go/escape-from-tarkov  /go/dbd/  301
+/go/escape-from-tarkov/  /go/dbd/  301

@@ -1,0 +1,39 @@
+---
+import { heroSlides } from '../data/products';
+import SectionHeader from './SectionHeader.astro';
+import ResponsiveImage from './ResponsiveImage.astro';
+
+const slides = heroSlides.slice(0, 6);
+---
+
+<section id="explore" class="border-y border-border bg-muted/15 py-16 md:py-24" aria-labelledby="explore-title">
+  <div class="mx-auto max-w-6xl px-5">
+    <SectionHeader
+      eyebrow="Gameplay"
+      title="DBD trial gallery"
+      desc="Customs, Factory, Labs, Interchange, Woods, and Streets stills that match the private cheat focus on raid awareness and combat."
+      titleId="explore-title"
+    />
+
+    <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        slides.map((slide, i) => (
+          <figure class="group overflow-hidden rounded-2xl border border-border/60 bg-background/40">
+            <ResponsiveImage
+              src={slide.src}
+              alt={slide.alt}
+              width={640}
+              height={360}
+              class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+              loading={i < 2 ? 'eager' : 'lazy'}
+            />
+            <figcaption class="px-4 py-3">
+              <p class="text-sm font-semibold text-foreground">{slide.caption}</p>
+              <p class="mt-1 text-xs text-muted-foreground">{slide.captionDesc}</p>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+</section>

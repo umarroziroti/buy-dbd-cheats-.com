@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllFaqs } from '../data/faq';
+import { resolvePageSeo } from '../config/seo';
+import { breadcrumbSchema, faqPageSchema, webPageSchema } from '../utils/schema';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SiteFaqSection from '../components/SiteFaqSection.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+
+const seo = resolvePageSeo('/faq/');
+const breadcrumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'FAQ', path: '/faq/' },
+];
+
+const faqs = getAllFaqs();
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  jsonLd={[
+    webPageSchema({
+      name: 'FAQ — DBD Cheats & Products',
+      description:
+        'Answers about DBD cheat tiers, map hack, scripts, HWID tools, blog guides and checkout at buydbdcheats.com.',
+      url: '/faq/',
+    }),
+    faqPageSchema(faqs.map((f, i) => ({ num: String(i + 1).padStart(2, '0'), q: f.q, a: f.a.replace(/<[^>]+>/g, '') }))),
+    breadcrumbSchema(breadcrumbs),
+  ]}
+>
+  <section class="border-b border-border bg-muted/10 py-8 md:py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="mt-6">
+        <SectionHeader
+          as="h1"
+          eyebrow="Help center"
+          title="DBD Cheats FAQ"
+          desc="Compatibility, bans, plans ($35 / $150), aimbot, ESP, utilities and setup — straight answers before you buy."
+          titleId="faq-page-title"
+        />
+      </div>
+    </div>
+  </section>
+
+  <SiteFaqSection items={faqs} variant="full" titleId="faq-page-list" />
+</BaseLayout>

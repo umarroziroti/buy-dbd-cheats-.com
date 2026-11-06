@@ -1,0 +1,84 @@
+---
+import { t } from '../i18n';
+import { Separator } from '@/components/starwind/separator';
+
+const resourceLinks = [
+  { href: '/blog/', label: 'Blog archive', ariaLabel: 'Blog' },
+  { href: '/products/dbd-cheats/elite/', label: 'DBD Cheats', ariaLabel: 'DBD Cheats' },
+  { href: '/products/dbd-cheats/hwid-spoofer/', label: 'HWID Spoofer', ariaLabel: 'HWID Spoofer' },
+  { href: '/products/dbd-cheats/ugc/', label: 'Game Accounts', ariaLabel: 'Game Accounts' },
+  { href: '/products/dbd-cheats/skin-changer/', label: 'Skin Changer', ariaLabel: 'Skin Changer' },
+  { href: '/products/dbd-cheats/', label: 'Products & utilities', ariaLabel: 'Products' },
+  { href: '/support/', label: t.footer.support },
+];
+
+const legalLinks = [
+  { href: '/about/', label: t.footer.about },
+  { href: '/privacy/', label: t.footer.privacy },
+  { href: '/terms/', label: t.footer.terms },
+];
+---
+
+<footer class="border-t border-border bg-muted/30 py-16">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-4">
+        <a href="/" class="inline-flex items-center gap-2.5" aria-label={t.ui.homeAria}>
+          <picture>
+            <source srcset="/logo-nav.webp" type="image/webp" />
+            <img src="/logo-nav.png" alt="" width="40" height="40" class="size-8 rounded-full object-cover sm:size-9" decoding="async" />
+          </picture>
+          <span class="sr-only">{t.site.name}</span>
+        </a>
+        <p class="text-sm text-muted-foreground">{t.footer.tagline}</p>
+      </div>
+
+      <nav aria-label={t.footer.explore}>
+        <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.footer.explore}</p>
+        <ul class="mt-3 space-y-2">
+          {t.footer.exploreLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="text-sm text-muted-foreground hover:text-primary"
+                aria-label={link.ariaLabel}
+                {...(link.scrollTarget ? { 'data-scroll-target': link.scrollTarget } : {})}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <nav aria-label={t.footer.support}>
+        <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.footer.support}</p>
+        <ul class="mt-3 space-y-2">
+          {resourceLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-muted-foreground hover:text-primary" aria-label={link.ariaLabel}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <nav aria-label={t.footer.legal}>
+        <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.footer.legal}</p>
+        <ul class="mt-3 space-y-2">
+          {legalLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-muted-foreground hover:text-primary">{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+
+    <Separator class="my-8" />
+    <p class="text-left text-sm text-muted-foreground">
+      &copy; {new Date().getFullYear()} {t.site.name} · {t.site.domain}
+    </p>
+  </div>
+</footer>
