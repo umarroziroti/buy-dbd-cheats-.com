@@ -1,0 +1,47 @@
+# DBD Cheats
+
+> Official marketing site for Dead by Daylight (DBD) PC cheats at www.buydbdcheats.com — aimbot, Survivor ESP, objects ESP, skill-check helper, HWID spoofer, game accounts tools, and skin changer. Checkout hops under /go/ are not for indexing.
+
+Canonical host is https://www.buydbdcheats.com (www). Content is English. Third-party tools may violate Behaviour Interactive / Easy Anti-Cheat rules; pages describe product features, setup, and risk — not a guarantee against bans.
+
+## Primary pages
+
+- [Home](https://www.buydbdcheats.com/): Hero, modules overview, shop, setup, FAQ teaser
+- [Products hub](https://www.buydbdcheats.com/products/dbd-cheats/): Full DBD catalog
+- [DBD Cheats](https://www.buydbdcheats.com/products/dbd-cheats/elite/): Main private cheat — Monthly $35 / Lifetime $150
+- [HWID Spoofer](https://www.buydbdcheats.com/products/dbd-cheats/hwid-spoofer/): Hardware ID rotation for PC flags
+- [Game Accounts](https://www.buydbdcheats.com/products/dbd-cheats/ugc/): Ban detection and recovery tools
+- [Skin Changer](https://www.buydbdcheats.com/products/dbd-cheats/skin-changer/): Client-side cosmetics and loadouts
+- [FAQ](https://www.buydbdcheats.com/faq/): Pricing, bans, platforms, support
+- [Support](https://www.buydbdcheats.com/support/): Discord and contact
+- [Blog](https://www.buydbdcheats.com/blog/): Guides on ESP, aimbot, EAC, and setup
+- [Forum](https://www.buydbdcheats.com/forum/): Community topics
+
+## Key guides
+
+- [DBD cheats explained](https://www.buydbdcheats.com/blog/dbd-cheats-explained/): External tools vs offline mods
+- [Best cheat features](https://www.buydbdcheats.com/blog/best-dbd-cheat-features/): Survivor and Killer modules
+- [ESP explained](https://www.buydbdcheats.com/blog/dbd-esp-explained/): Boxes, skeletons, filters
+- [Objects ESP](https://www.buydbdcheats.com/blog/dbd-objects-esp-guide/): Generators, pallets, totems, hatch
+- [Skill-check helper](https://www.buydbdcheats.com/blog/dbd-skill-check-helper-guide/): Good / Perfect / Auto Wiggle
+- [Aimbot options](https://www.buydbdcheats.com/blog/dbd-aimbot-options-guide/): Aim key, smoothness, FOV
+- [HWID spoofer guide](https://www.buydbdcheats.com/blog/dbd-hwid-spoofer-guide/): Hardware bans on PC
+- [EAC hardware bans](https://www.buydbdcheats.com/blog/dbd-fix-eac-hardware-bans/): Easy Anti-Cheat recovery notes
+- [Setup guide](https://www.buydbdcheats.com/blog/dbd-cheat-setup-guide/): Checkout to first trial
+- [Cheats FAQ article](https://www.buydbdcheats.com/blog/dbd-cheats-faq/): Pricing, bans, support
+
+## Discovery
+
+- [robots.txt](https://www.buydbdcheats.com/robots.txt): Crawl rules (Disallow /go/ and legacy product aliases)
+- [Sitemap index](https://www.buydbdcheats.com/sitemap.xml): Split sitemaps for pages, products, blog, forum
+- [RSS](https://www.buydbdcheats.com/rss.xml): Blog feed
+
+## Optional
+
+- [About](https://www.buydbdcheats.com/about/)
+- [Privacy Policy](https://www.buydbdcheats.com/privacy/)
+- [Terms & Conditions](https://www.buydbdcheats.com/terms/)
+- [Sitemap pages](https://www.buydbdcheats.com/sitemap-pages.xml)
+- [Sitemap products](https://www.buydbdcheats.com/sitemap-products.xml)
+- [Sitemap blog](https://www.buydbdcheats.com/sitemap-blog.xml)
+- [Sitemap forum](https://www.buydbdcheats.com/sitemap-forum.xml)

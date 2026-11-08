@@ -35,11 +35,11 @@ const toc = post.body
   }));
 
 const productLinks: { label: string; href: string; icon: IconName }[] = [
-  { label: 'DBD products', href: ROUTES.products, icon: 'sidebarHub' },
-  { label: 'DBD Cheats', href: ROUTES.productsElite, icon: 'sidebarElite' },
-  { label: 'Skin Changer', href: productPath('skin-changer'), icon: 'sidebarSkin' },
-  { label: 'HWID Spoofer', href: productPath('hwid-spoofer'), icon: 'sidebarHwid' },
-  { label: 'Game Accounts', href: productPath('ugc'), icon: 'sidebarUgc' },
+  { label: 'Store hub', href: ROUTES.products, icon: 'sidebarHub' },
+  { label: 'Elite private suite', href: ROUTES.productsElite, icon: 'sidebarElite' },
+  { label: 'Skin changer tool', href: productPath('skin-changer'), icon: 'sidebarSkin' },
+  { label: 'HWID spoofer tool', href: productPath('hwid-spoofer'), icon: 'sidebarHwid' },
+  { label: 'Accounts recovery tool', href: productPath('ugc'), icon: 'sidebarUgc' },
 ];
 ---
 
@@ -53,7 +53,7 @@ const productLinks: { label: string; href: string; icon: IconName }[] = [
   {
     toc.length > 0 && (
       <section class="blog-sidebar__block" aria-labelledby="blog-sidebar-toc-title">
-        <h3 id="blog-sidebar-toc-title" class="blog-sidebar__heading">
+        <p id="blog-sidebar-toc-title" class="blog-sidebar__heading">
           <Icon name="layers" size={14} class="text-primary" aria-hidden="true" />
           <span class="blog-sidebar__heading-text">In this article</span>
           {tocCount > 0 && (
@@ -61,7 +61,7 @@ const productLinks: { label: string; href: string; icon: IconName }[] = [
               {tocCount}
             </Badge>
           )}
-        </h3>
+        </p>
         <nav aria-label="Table of contents">
           <ul class="blog-sidebar__toc-list" data-blog-toc>
             {toc.map((item) => (
@@ -85,10 +85,10 @@ const productLinks: { label: string; href: string; icon: IconName }[] = [
   {
     related.length > 0 && (
       <section class="blog-sidebar__block" aria-labelledby="blog-sidebar-related-title">
-        <h3 id="blog-sidebar-related-title" class="blog-sidebar__heading">
+        <p id="blog-sidebar-related-title" class="blog-sidebar__heading">
           <Icon name="navBlog" size={14} class="text-primary" aria-hidden="true" />
           Related guides
-        </h3>
+        </p>
         <ul class="blog-sidebar__list">
           {related.map((item) => (
             <li>
@@ -104,10 +104,10 @@ const productLinks: { label: string; href: string; icon: IconName }[] = [
   }
 
   <section class="blog-sidebar__block blog-sidebar__block--shop" aria-labelledby="blog-sidebar-products-title">
-    <h3 id="blog-sidebar-products-title" class="blog-sidebar__heading">
+    <p id="blog-sidebar-products-title" class="blog-sidebar__heading">
       <Icon name="navProducts" size={14} class="text-primary" aria-hidden="true" />
       Our products
-    </h3>
+    </p>
     <ul class="blog-sidebar__list">
       {productLinks.map((link) => (
         <li>
@@ -126,7 +126,7 @@ const productLinks: { label: string; href: string; icon: IconName }[] = [
       class="blog-sidebar__cta mt-2.5 w-full min-w-0 justify-start"
       aria-label={t.ui.checkoutAria}
     >
-      <span class="truncate">Buy DBD Cheats</span>
+      <span class="truncate">Open checkout</span>
       <Icon name="arrowRight" size={16} class="shrink-0" />
     </Button>
   </section>

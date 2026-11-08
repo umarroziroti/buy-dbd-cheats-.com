@@ -44,24 +44,20 @@ export const blogTagIcons: Record<string, IconName> = {
 };
 
 export const heroStatusPills: { icon: IconName; label: string }[] = [
-  { icon: 'espActive', label: 'ESP Active' },
-  { icon: 'radarOnline', label: 'Radar Online' },
-  { icon: 'seasonBuild', label: 'Season Build' },
-  { icon: 'liveStatus', label: 'Status Checked' },
-  { icon: 'softAim', label: 'Aimbot Ready' },
-  { icon: 'noRecoil', label: 'No Recoil' },
-  { icon: 'streamProof', label: 'Stream Proof' },
+  { icon: 'espActive', label: 'Survivor ESP' },
   { icon: 'lootEsp', label: 'Objects ESP' },
+  { icon: 'softAim', label: 'Aimbot Ready' },
   { icon: 'skeletonEsp', label: 'Skeleton ESP' },
-  { icon: 'uavRadar', label: 'UAV Radar' },
-  { icon: 'mapHack', label: 'ESP Wallhack' },
+  { icon: 'streamProof', label: 'Stream Proof' },
+  { icon: 'mapHack', label: 'Skill Check Help' },
+  { icon: 'liveStatus', label: 'Status Checked' },
   { icon: 'support247', label: '24/7 Support' },
   { icon: 'instantDelivery', label: 'Instant Delivery' },
-  { icon: 'rankedSafe', label: 'Raid Ready' },
-  { icon: 'triggerBot', label: 'Trigger Bot' },
-  { icon: 'boneSelect', label: 'Bone Select' },
-  { icon: 'liveStatus', label: 'Live Status' },
+  { icon: 'rankedSafe', label: 'Trial Ready' },
+  { icon: 'boneSelect', label: 'Battle Mode' },
   { icon: 'autoUpdates', label: 'Auto Updates' },
+  { icon: 'seasonBuild', label: 'Chapter Build' },
+  { icon: 'liveStatus', label: 'Live Status' },
 ];
 
 export const heroStatIcons: IconName[] = [

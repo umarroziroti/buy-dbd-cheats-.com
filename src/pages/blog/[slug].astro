@@ -3,7 +3,7 @@ import '../../styles/blog-pages.css';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { t } from '../../i18n';
 import { getAllBlogSlugs, getBlogPost, getRelatedBlogPosts } from '../../data/blog';
-import { pageTitle } from '../../config/seo';
+import { pageTitle, canonicalUrl } from '../../config/seo';
 import {
   articleSchema,
   breadcrumbSchema,
@@ -38,7 +38,7 @@ if (!post) {
 const postPath = `/blog/${post.slug}/`;
 const breadcrumbs = [
   { name: 'Home', path: '/' },
-  { name: 'Blog', path: '/blog/' },
+  { name: 'Guides hub', path: '/blog/' },
   { name: post.title, path: postPath },
 ];
 
@@ -67,6 +67,8 @@ function slugify(text: string): string {
     .replace(/^-|-$/g, '');
 }
 const published = parseBlogDate(post.date);
+const shareUrl = encodeURIComponent(canonicalUrl(postPath));
+const shareText = encodeURIComponent(post.title);
 ---
 
 <BaseLayout
@@ -95,8 +97,6 @@ const published = parseBlogDate(post.date);
       <BlogPostTopBar post={post} class="mt-6" />
 
       <div class="blog-article__layout mt-4 grid gap-6 lg:grid-cols-[minmax(14rem,16.5rem)_minmax(0,1fr)] lg:items-start lg:gap-8 xl:grid-cols-[17.5rem_minmax(0,1fr)]">
-        <BlogSidebar post={post} related={related} class="order-2 lg:order-1" />
-
         <div class="order-1 min-w-0 lg:order-2">
           <figure class="blog-article__hero">
             <ResponsiveImage
@@ -128,11 +128,11 @@ const published = parseBlogDate(post.date);
             {post.body.map((block: BlogBlock) => {
               if (block.type === 'h2') {
                 const id = slugify(block.text);
-                return <h3 id={id}>{block.text}</h3>;
+                return <h2 id={id}>{block.text}</h2>;
               }
               if (block.type === 'h3') {
                 const id = slugify(block.text);
-                return <h4 id={id}>{block.text}</h4>;
+                return <h3 id={id}>{block.text}</h3>;
               }
               if (block.type === 'ul') {
                 return (
@@ -182,18 +182,36 @@ const published = parseBlogDate(post.date);
 
           <nav class="blog-article__actions" aria-label="Continue reading">
             <Button as="a" href={checkoutPath('dbd')} variant="primary" aria-label={t.ui.checkoutAria}>
-              Buy DBD Cheats
+              Buy private suite
               <Icon name="arrowRight" size={17} />
             </Button>
             <Button as="a" href={ROUTES.products} variant="outline">
-              View products
+              View product catalog
             </Button>
             <Button as="a" href={ROUTES.blog} variant="outline">
               More articles
               <Icon name="arrowRight" size={17} />
             </Button>
           </nav>
+          <p class="mt-4 text-sm text-muted-foreground">
+            Share:
+            <a
+              class="underline hover:text-primary"
+              href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >Share article on X</a>
+            ·
+            <a
+              class="underline hover:text-primary"
+              href={`https://www.reddit.com/submit?url=${shareUrl}&title=${shareText}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >Share article on Reddit</a>
+          </p>
         </div>
+
+        <BlogSidebar post={post} related={related} class="order-2 lg:order-1" />
       </div>
     </div>
   </article>

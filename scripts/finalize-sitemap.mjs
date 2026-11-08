@@ -71,7 +71,7 @@ function normalizeUrl(loc) {
     return null;
   }
   if (url.protocol !== 'https:') url.protocol = 'https:';
-  url.hostname = 'buydbdcheats.com';
+  url.hostname = 'www.buydbdcheats.com';
   url.hash = '';
   url.search = '';
   let pathname = url.pathname;

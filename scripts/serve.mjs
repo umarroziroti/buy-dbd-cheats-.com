@@ -93,6 +93,18 @@ function getCacheControl(filePath) {
     return 'public, max-age=31536000, immutable';
   }
 
+  // Brand / favicon files change during rebrands — avoid year-long immutable cache locally.
+  if (
+    basename.startsWith('logo') ||
+    basename.startsWith('favicon') ||
+    basename.startsWith('apple-touch') ||
+    basename.startsWith('dbd-mark') ||
+    basename.startsWith('dbd-wordmark') ||
+    filePath.includes(`${path.sep}images${path.sep}brand${path.sep}`)
+  ) {
+    return 'public, max-age=0, must-revalidate';
+  }
+
   if (['.webp', '.png', '.jpg', '.jpeg', '.svg', '.ico', '.woff2'].includes(ext)) {
     return 'public, max-age=31536000, immutable';
   }

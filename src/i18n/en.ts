@@ -24,7 +24,7 @@ export const en: Translations = {
     status: 'DBD online',
     eyebrow: 'dbd cheats',
     titleLine1: 'DBD Cheats',
-    titleLine2: 'Aimbot & ESP',
+    titleLine2: 'Aimbot, ESP & Skill Check for Windows',
     subtitle:
       'Buy DBD Cheats for Windows PC — aimbot, Survivor ESP, objects ESP, skill check helper, battle mode, and status-aware updates. Monthly $35 or lifetime $150.',
     ctaPrimary: 'View products',
@@ -285,7 +285,7 @@ export const en: Translations = {
     eyebrow: 'Intel hub',
     title: 'DBD intel',
     subtitle: 'Aimbot, Survivor ESP, objects ESP, skill check helper, Windows setup and EAC status before you buy.',
-    latestTitle: 'Latest DBD Cheats guides',
+    latestTitle: 'Latest DBD Cheats guides for aimbot & setup',
     latestSubtitle: 'Filter by topic or sort to find aimbot, ESP, skill check, skins and patch-day DBD Cheats guides.',
     filterAll: 'All articles',
     sortLabel: 'Sort by',
@@ -302,25 +302,25 @@ export const en: Translations = {
         title: 'DBD cheats explained: external tools vs offline mods',
         slug: 'dbd-cheats-explained',
         image: '/images/gameplay/dbd-trial-generators.png',
-        desc: 'What Dead by Daylight cheats mean on PC — trial risk, Easy Anti-Cheat, and the external suite sold at buydbdcheats.com.',
+        desc: 'Explained: What Dead by Daylight cheats mean on PC — trial risk, Easy Anti-Cheat, and the external suite at buydbdcheats.com.',
         date: 'Oct 29, 2025',
         readTime: '14 min read',
       },
       {
         tag: 'Features',
-        title: 'Best DBD cheat features for Survivor and Killer trials',
+        title: 'Best DBD cheat features for Survivors and Killers — cheats',
         slug: 'best-dbd-cheat-features',
         image: '/images/gameplay/dbd-trial-chase.png',
-        desc: 'Ranked modules — aimbot, Survivor ESP, objects ESP, skill check helper, and battle mode for Dead by Daylight on PC.',
+        desc: 'DBD cheat features ranked — Survivor ESP, objects ESP, aimbot, skill-check helpers, battle mode, and FOV tools for PC trials.',
         date: 'Oct 22, 2025',
         readTime: '12 min read',
       },
       {
         tag: 'Guides',
-        title: 'DBD ESP explained: boxes, bones, and filters',
+        title: 'DBD ESP explained: boxes, skeletons, filters & cheats',
         slug: 'dbd-esp-explained',
         image: '/images/gameplay/dbd-trial-pallet.png',
-        desc: 'How Dead by Daylight ESP overlays work on PC — entity types, distance tags, and filters in the loader.',
+        desc: 'How Dead by Daylight ESP overlays work on PC — Survivor tags, objects, distance, and filters inside the loader before you buy.',
         date: 'Oct 15, 2025',
         readTime: '11 min read',
       },
@@ -672,7 +672,7 @@ export const en: Translations = {
   },
   faq: {
     eyebrow: 'FAQ',
-    title: 'DBD Cheats FAQ',
+    title: 'DBD Cheats FAQ: Pricing, Bans, Aimbot & Support Details',
     subtitle: 'Compatibility, bans, plans ($35 / $150) and setup — straight answers before you buy.',
     items: [
       {
@@ -725,7 +725,7 @@ export const en: Translations = {
   },
   legalPages: {
     about: {
-      title: 'About DBD Cheats | Buy PC Aimbot & ESP',
+      title: 'Learn About DBD Cheats Store | Buy PC Aimbot & ESP',
       description:
         'About DBD Cheats — buy Dead by Daylight cheats for Windows PC (aimbot, Survivor ESP, objects ESP) at monthly $35 or lifetime $150.',
       sections: [
@@ -774,24 +774,35 @@ export const en: Translations = {
           heading: 'Information we collect',
           paragraphs: [
             'We may collect basic analytics such as page views, device type, browser and approximate region through Google Analytics when it is enabled. Checkout runs on external pages. We do not store payment card data on buydbdcheats.com.',
+            'If you email support or open a Discord ticket, we keep the address and message content you send so we can reply about loader delivery, license moves, or order issues. Server logs may retain IP addresses briefly for abuse prevention.',
           ],
         },
         {
           heading: 'How we use data',
           paragraphs: [
             'Analytics show which guides and product pages people use so we can fix broken links and improve pages. Support tickets keep the email and message you send until the issue is closed.',
+            'We do not sell personal contact lists. Aggregate traffic stats may inform which Dead by Daylight guides stay published. Order fulfillment happens on the checkout partner; their notices apply to payment processing.',
           ],
         },
         {
           heading: 'Cookies',
           paragraphs: [
             'We use basic analytics cookies. You can block cookies in your browser. The site still works without them.',
+            'Theme preference may stay in local storage on your device so dark or light mode persists between visits. That preference is not used for advertising profiles.',
+          ],
+        },
+        {
+          heading: 'Retention and third parties',
+          paragraphs: [
+            'Analytics retention follows the Google Analytics property settings when GA is enabled. Support emails are removed when the ticket is closed unless law or fraud review requires a longer hold.',
+            'Checkout, Discord, and CDN providers process data under their own policies when you leave buydbdcheats.com or load their embeds.',
           ],
         },
         {
           heading: 'Support',
           paragraphs: [
             'For privacy questions, use the Support page. Purchase and refund rules are in Terms & Conditions.',
+            'If you want analytics cookies cleared, use your browser settings or request deletion guidance via support@buydbdcheats.com with the email tied to your order.',
           ],
         },
       ],

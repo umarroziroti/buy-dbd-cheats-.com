@@ -55,7 +55,9 @@ const statusBadgeIcon = (text: string): IconName => {
 <Card class:list={['group flex h-full flex-col transition-shadow hover:shadow-md', className]}>
   <CardHeader class="space-y-2.5">
     <CardTitle class="text-lg normal-case leading-snug">
-      <a href={href} class="hover:text-primary">{title}</a>
+      <a href={href} class="hover:text-primary"
+        ><span class="sr-only">Catalog · </span>{title}</a
+      >
     </CardTitle>
     <div class="catalog-card__badges flex flex-wrap items-center gap-1.5">
       <Badge tone="primary" appearance="outline" size="sm" class="catalog-card__badge gap-1">
@@ -104,10 +106,12 @@ const statusBadgeIcon = (text: string): IconName => {
   </CardContent>
   <CardFooter class="flex flex-col gap-2 sm:flex-row">
     <Button as="a" href={buyUrl} variant="primary" size="sm" class="w-full sm:flex-1">
+      <span class="sr-only">{title} · </span>
       {buyLabel}
       <Icon name="arrowRight" size={17} />
     </Button>
     <Button as="a" href={href} variant="outline" size="sm" class="w-full sm:flex-1">
+      <span class="sr-only">{title} · </span>
       {viewLabel}
       <Icon name="arrowRight" size={17} />
     </Button>

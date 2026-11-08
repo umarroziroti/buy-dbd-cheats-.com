@@ -10,14 +10,14 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'DBD Cheats | Aimbot, ESP and Skill Check',
+    title: 'DBD Cheats – Aimbot, ESP & Skill Check for Windows',
     description:
-      'Buy Dead by Daylight cheats on Windows PC. Aimbot, Survivor ESP, objects ESP, skill check helper, and battle mode with live status. Monthly $35 or lifetime $150.',
+      'DBD cheats for Windows PC: aimbot, Survivor ESP, objects ESP, skill check helper, and battle mode. Monthly $35 or lifetime $150.',
   },
   '/products/dbd-cheats/': {
-    title: 'DBD Store | DBD Cheats',
+    title: 'Cheat store for DBD — suite, HWID, accounts, skins',
     description:
-      'DBD store — private cheats (monthly $35 / lifetime $150), HWID spoofer, game accounts, and skin changer with aimbot, Survivor ESP, and objects ESP.',
+      'Cheat catalog for Dead by Daylight — private suite, HWID spoofer, game accounts, and skin changer for Windows PC trials.',
   },
   '/products/dbd-cheats/elite/': {
     title: 'DBD Cheats | Aimbot & ESP',
@@ -45,17 +45,17 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Compare DBD cheat utilities — HWID Spoofer, Game Accounts, and Skin Changer — and pick the right tool beside the main DBD Cheats suite.',
   },
   '/blog/': {
-    title: 'DBD Guides | DBD Cheats',
+    title: 'Guides for Aimbot, ESP, Setup and EAC | DBD Cheats',
     description:
-      'DBD Guides hub — aimbot, Survivor ESP, objects ESP, skill check helper, HWID, skins, Windows setup, and EAC status before you buy.',
+      'Guides hub — aimbot, Survivor ESP, objects ESP, skill check helper, HWID, skins, Windows setup, and EAC status before you buy.',
   },
   '/forum/': {
-    title: 'DBD Forum | Buyer Discussion',
+    title: 'Forum – Read DBD cheats discussion covering aimbot',
     description:
-      'Read DBD cheats discussion covering aimbot, Survivor ESP, objects ESP, skill check helper, and Easy Anti-Cheat status notes before you pick a plan.',
+      'Forum: Read DBD cheats discussion covering aimbot, Survivor ESP, objects ESP, skill check helper, and EAC status before you buy.',
   },
   '/faq/': {
-    title: 'DBD FAQ | DBD Cheats',
+    title: 'FAQ — Pricing, Bans, Aimbot, ESP & Support Details',
     description:
       'FAQ for DBD Cheats on Windows PC — $35 monthly and $150 lifetime, aimbot and ESP features, status, setup, and Discord support.',
   },
@@ -65,14 +65,14 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Terms for buying DBD Cheats on buydbdcheats.com — license use, delivery, refunds and account risk.',
   },
   '/privacy/': {
-    title: 'Privacy Policy | DBD Cheats Shop',
+    title: 'Privacy Policy: Cookies, Analytics, and Contact Data',
     description:
-      'How the DBD Cheats shop at buydbdcheats.com uses analytics, cookies and contact data.',
+      'Privacy details for the DBD Cheats shop at buydbdcheats.com — analytics, cookies, and contact data when you browse or buy.',
   },
   '/about/': {
-    title: 'About DBD Cheats | Aimbot & ESP Store',
+    title: 'Buy PC Aimbot & ESP Store | Learn About DBD Cheats',
     description:
-      'Learn how DBD Cheats sells aimbot, Survivor ESP, objects ESP, HWID, accounts, and skins for Dead by Daylight on Windows PC.',
+      'Buy PC Dead by Daylight tools from DBD Cheats — aimbot, Survivor ESP, objects ESP, HWID, accounts, and skins on Windows.',
   },
   '/support/': {
     title: 'DBD Support | DBD Cheats',

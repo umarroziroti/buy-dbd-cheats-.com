@@ -40,7 +40,7 @@ export function organizationSchema() {
     '@type': 'Organization',
     name: 'DBD Cheats',
     url: `${SITE_ORIGIN}/`,
-    logo: `${SITE_ORIGIN}/logo.png`,
+    logo: `${SITE_ORIGIN}/images/brand/dbd-mark-512.png`,
     email: SUPPORT_EMAIL,
     ...(sameAs.length > 0 ? { sameAs } : {}),
     contactPoint: [

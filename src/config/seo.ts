@@ -45,9 +45,18 @@ export function resolvePageSeo(pathname: string): { title: string; description: 
 }
 
 export function pageTitle(keyword: string, brand = t.site.name): string {
-  const suffix = ` | ${brand}`;
   const max = 60;
+  // Already in SERP length band — keep as-is (no truncation / suffix).
+  if (keyword.length >= 50 && keyword.length <= max) return keyword;
+  // Avoid repeating brand tokens already present in the keyword (e.g. "DBD … | DBD Cheats").
+  const brandToken = brand.split(/\s+/)[0];
+  if (brandToken && new RegExp(`\\b${brandToken}\\b`, 'i').test(keyword)) {
+    return keyword.length <= max ? keyword : keyword.slice(0, max).trim();
+  }
+  const suffix = ` | ${brand}`;
   if (`${keyword}${suffix}`.length <= max) return `${keyword}${suffix}`;
+  // Prefer the bare keyword when adding a brand suffix would force a mid-word cut.
+  if (keyword.length >= 45 && keyword.length <= max) return keyword;
   const trimmed = keyword.slice(0, Math.max(20, max - suffix.length - 1)).trim();
   return `${trimmed}${suffix}`;
 }

@@ -33,7 +33,7 @@ const { title, description, breadcrumbLabel, sections } = Astro.props;
     <Prose class="mt-10 max-w-none text-left">
       {sections.map((section) => (
         <section class="mt-8">
-          <h3>{section.heading}</h3>
+          <h2>{section.heading}</h2>
           {section.paragraphs.map((paragraph) => (
             <p>{paragraph}</p>
           ))}

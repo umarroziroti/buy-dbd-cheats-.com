@@ -7,7 +7,6 @@ import {
   Sheet,
   SheetContent,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from '@/components/starwind/sheet';
 import Icon from './icons/Icon.astro';
@@ -33,18 +32,17 @@ const purchaseUrl = checkoutPath('dbd');
     >
     <a href="/" class="inline-flex min-w-0 items-center gap-2" aria-label={t.ui.homeAria}>
       <picture>
-        <source srcset="/logo-nav.webp" type="image/webp" />
+        <source srcset="/images/brand/dbd-mark-160.webp" type="image/webp" />
         <img
-          src="/logo-nav.png"
-          alt=""
+          src="/images/brand/dbd-mark-160.png"
+          alt="DBD Cheats logo"
           width="40"
           height="40"
-          class="size-8 rounded-full object-cover sm:size-9"
+          class="size-8 rounded-full object-contain sm:size-9"
           decoding="async"
           fetchpriority="high"
         />
       </picture>
-      <span class="sr-only">{t.site.name}</span>
     </a>
 
     <nav class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-6 lg:flex" aria-label="Primary">
@@ -81,7 +79,7 @@ const purchaseUrl = checkoutPath('dbd');
         </SheetTrigger>
         <SheetContent side="right" class="flex w-[min(100vw-2rem,20rem)] flex-col gap-4">
           <SheetHeader>
-            <SheetTitle>{t.site.name}</SheetTitle>
+            <p class="text-lg font-semibold text-foreground">{t.site.name}</p>
           </SheetHeader>
           <nav class="flex flex-col gap-1" aria-label="Mobile">
             {t.nav.map((link) => (
@@ -92,6 +90,7 @@ const purchaseUrl = checkoutPath('dbd');
                 {...(link.scrollTarget ? { 'data-scroll-target': link.scrollTarget } : {})}
               >
                 <Icon name={navIcons[link.label] ?? 'navFeatures'} size={16} />
+                <span class="sr-only">Menu · </span>
                 {link.label}
               </a>
             ))}
